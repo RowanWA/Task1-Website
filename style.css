@@ -19,10 +19,8 @@
 }
 
 .img-size {
-min-width: 2vw;
-min-height: 2vw;
-max-width: 10vw;
-max-width: 10vw;
+width: 15%;
+height: 15%;
 }
 
 #space {
