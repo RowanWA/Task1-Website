@@ -37,8 +37,7 @@ img {
     /* defining image size/position */
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 300px;
-    min-width: 15em;
-    min-height: 15em;
+    
+    width: 15em;
+    height: 15em;
 }
