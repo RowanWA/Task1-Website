@@ -1,0 +1,24 @@
+*{
+    margin: auto;
+    padding: 10px;
+    size: 100vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+        width: 100%;
+        /* allows fluidity of the containers content */
+        display: flex;
+        flex-direction: column;
+        /* centers */
+        align-items: center;
+        justify-content: center;
+}
