@@ -10,9 +10,12 @@
 
 .flex-container {
     display: flex;
+    /* setting flex direction as row */
     flex-direction: row;
+    /* allowing for wrapping */
     flex-wrap: wrap;
     justify-content: space-around;
+    /* aligning content to center */
     align-items: center;
     align-content: center;
     border-style: dashed;
@@ -22,7 +25,8 @@
     padding-right: 1em;
 }
 
-.img-size {
+.img-fmt {
+    /* formating images */
     background-color: aquamarine;
     border-style: inset;
     border-color: aquamarine;
@@ -30,11 +34,11 @@
 }
 
 img {
+    /* defining image size/position */
     align-items: center;
     justify-content: center;
     width: 300px;
     height: 300px;
+    min-width: 15em;
+    min-height: 15em;
 }
-
-
-
