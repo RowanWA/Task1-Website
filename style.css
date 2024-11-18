@@ -6,54 +6,51 @@
 }
 
 .flex-container {
+    /* setting display type */
     display: flex;
     /* setting flex direction as row */
     flex-direction: row;
     /* allowing for wrapping */
     flex-wrap: wrap;
+    /* justifying content to spread across container evenly */
     justify-content: space-evenly;
-    /* aligning content to center */
-    /* row-gap:calc (500px + ((100vw - (2000px)) * 0.1px)); */
+    /* aligning content stretch across container evenly */
     align-items: stretch;
+    /* determining border style */
     border-style: dashed;
+    /* setting border width */
     border-width: 5px;
+    /* setting border color */
     border-color: black;
-    /* row-gap: calc((100vw - 2000px) / 5); */
-    /* row-gap: ;     */
-    /* height: calc((100vw - 500px * 4) / 5 + 500px * 3); */
-    /* margin-bottom: 10em; */
-    /* padding-left: 1em; 
-    padding-right: 1em; */
 }
 
 .img-fmt {
-    /* formating images */
+    /* background color */
     background-color: aquamarine;
+    /* setting border style */
     border-style: inset;
     border-color: aquamarine;
-    /* margin-bottom: calc(500px + ((100vw - (2000px)) / 10px)); */
-    /* width: 25vw;
-    height: 25vh; */
-
 }
 
 img {
-    /* defining image size/position */
+    /* defining image size */
     width: 100px;
     height: 100px;
-    /* margin: 5px; */
-    /* padding: 5px; */
 }
 
+/* making format change with screensize using media queries */
 @media (max-width : 6000px) {
     img {
+        /* setting format for this screensize */
         align-items: center;
         justify-content: center;
         width: 620px;
         height: 620px;
     }
 
+    /* changing flex container format with screensize */
     .flex-container {
+        /* calculating correct size for row gap depending on screensize  */
         row-gap: calc(((100vw - 3720px) / 7) - 5px);
     }
 }
